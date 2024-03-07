@@ -1,0 +1,118 @@
+body {
+    padding: 0;
+    background-color: #424242;
+}
+
+.container {
+    margin : 30px auto;
+    overflow: hidden;
+    width:1300px;
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid brown;*/
+    position: relative;
+    padding: 20px 10px;
+}
+
+.box {
+    float: left;
+    margin: 8px 18px;
+}
+
+.circle {
+    border: 1px solid whitesmoke;
+    width : 350px;
+    height: 350px;
+    border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+    color: white;
+    font-size: 14px;   
+    transition: 1s;
+}
+
+.first {
+ animation: rotation 4s linear infinite;
+ 
+}
+
+.second {
+    animation: rotation2 4s linear infinite;
+    animation-delay: 2s;
+}
+
+.third {
+    animation: rotation 4s linear infinite;
+    animation-delay: 3s;
+}
+
+h2{
+    text-align: center;
+    
+}
+
+p {
+    text-align: center;
+}
+.read {
+    border: 1px solid whitesmoke;
+    width:90px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 30% 70% 70% 60%/70% 50% 80% 40%;
+    margin: 5px auto;
+}
+
+.content {
+    color: white;
+    width : 300px;
+    overflow: hidden;
+    /*border: 1px solid aqua;*/
+}
+
+.content:nth-of-type(1) {
+    position: absolute;
+    top: 80px;
+    left : 120px;
+}
+
+.content:nth-of-type(2) {
+    position: absolute;
+    top: 80px; 
+    left : 510px;
+}
+
+.content:nth-of-type(3) {
+    position: absolute;
+    top: 80px; 
+    right: 120px;
+}
+
+.red, .white, .blue {
+    transition: 0.4s;
+}
+
+.red:hover {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.white:hover {
+    background-color: whitesmoke;
+    opacity: 0.5; 
+}
+
+.blue:hover {
+    background-color: blue;
+    opacity: 0.5; 
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation2 {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
