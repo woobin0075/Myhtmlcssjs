@@ -1,0 +1,407 @@
+body {
+    overflow-x: scroll;
+}
+
+
+#leftfixedbox {
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: inline-block;
+    z-index: 3;
+    background-color: white;
+}
+
+#homepagelogo {
+    width: 100%;
+    padding-top:70px;
+    padding-bottom: 70px;
+    text-align: center;
+    
+}
+
+#loginbox {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    width: 250px;
+    margin: 2px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+#loginbox a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#loginbox a:nth-child(4), #loginbox a:nth-child(5){
+    color: gray;
+    font-size: 12px;
+}
+
+#loginbox span:nth-child(6) {
+    font-size: 12px;
+    color: red;
+}
+
+#leftfixedbox ul {
+    padding: 40px;
+}
+
+#leftfixedbox ul li {
+    margin: 30px;
+}
+
+#leftfixedbox ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#leftfixedbox ul li:nth-child(1) {
+    list-style-image: url("./images/고객센터.PNG");
+}
+
+#leftfixedbox ul li:nth-child(2) {
+    list-style-image: url("./images/넷마블피시방.PNG");
+}
+
+#leftfixedbox ul li:nth-child(3) {
+    list-style-image: url("./images/이벤트.PNG");
+}
+
+#leftfixedbox ul li:nth-child(4) {
+    list-style-image: url("./images/채널넷마블.PNG");
+}
+
+#leftfixedbox ul li:nth-child(5) {
+    list-style-image: url("./images/넷마블스토어.PNG");
+}
+
+.container {
+    width: 90vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 330px;
+    z-index: 1;
+    position: relative;
+    /*overflow: scroll;*/
+}
+
+#bigad {
+    width: inherit;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url('./images/파라곤.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#adgamebar {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    height: 70px;
+    width: inherit;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+}
+
+#adgamebar a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to right, lightgray 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    
+}
+
+#adgamebar a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+}
+
+.Mobilegame {
+    width: 250px;
+    float: left;
+    margin: 5px 2px;
+}
+
+.MobilegameImage {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#Mobilegamesbox {
+    width: 1020px;
+    overflow: hidden;
+    float: left;
+}
+
+#Mobilegamesbox .Mobilegame:nth-of-type(1) > .MobilegameImage {
+    background-image: url('./images/모바일_샬롯의테이블.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Mobilegamesbox .Mobilegame:nth-of-type(2) > .MobilegameImage {
+    background-image: url('./images/모바일_세븐나이츠.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Mobilegamesbox .Mobilegame:nth-of-type(3) > .MobilegameImage {
+    background-image: url('./images/모바일_쿵야.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Mobilegamesbox .Mobilegame:nth-of-type(4) > .MobilegameImage {
+    background-image: url('./images/모바일_제2의나라.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Mobilegamesbox .Mobilegame:nth-of-type(5) > .MobilegameImage {
+    background-image: url('./images/모바일_블레이드.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Mobilegamesbox .Mobilegame:nth-of-type(6) > .MobilegameImage {
+    background-image: url('./images/모바일_리니지2.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Mobilegamesbox .Mobilegame:nth-of-type(7) > .MobilegameImage {
+    background-image: url('./images/모바일_A3.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Mobilegamesbox .Mobilegame:nth-of-type(8) > .MobilegameImage {
+    background-image: url('./images/모바일_일곱개의대죄.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Mobilesmall {
+    display: block;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.Mobilesmall img, .Mobilesmall p, .Mobilesmall h4 {
+    float: left;
+}
+
+.Mobilesmall img {
+    border-radius: 10px;
+}
+
+.Mobilesmall h4 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.Mobilesmall p {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#pcgamesbox {
+    width: 475px;
+    float: left;
+    margin-left: 100px;
+}
+
+.pcgamelist {
+    margin: 15px auto;
+    position: relative;
+}
+
+.pcgamelist div {
+    width: 30%;
+    position: absolute;
+    top : 40px;
+    right : 60px;
+}
+
+.pcgamelist div h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#pcgamesbox .pcgamelist:nth-of-type(1) {
+    width: inherit;
+    height: 150px;
+    background-image: url('./images/PC_파라곤.PNG');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    border-radius: 10px;
+}
+
+#pcgamesbox .pcgamelist:nth-of-type(2) {
+    width: inherit;
+    height: 150px;
+    background-image: url('./images/PC_마구마구.PNG');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    border-radius: 10px;
+}
+
+#pcgamesbox .pcgamelist:nth-of-type(3) {
+    width: inherit;
+    height: 150px;
+    background-image: url('./images/PC_모두의마블.PNG');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    border-radius: 10px;
+}
+
+#pcgamesbox .pcgamelist:nth-of-type(4) {
+    width: inherit;
+    height: 150px;
+    background-image: url('./images/PC_클럽엠스타.PNG');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    border-radius: 10px;
+}
+
+#pcgamesbox .pcgamelist:nth-of-type(5) {
+    width: inherit;
+    height: 150px;
+    background-image: url('./images/PC_대항해시대.PNG');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    border-radius: 10px;
+}
+
+#vm {
+    width: 1700px;
+    height: 550px;
+    border-radius: 10px;
+    margin:50px auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+    /*border: 1px solid black;*/
+}
+
+#vmsite {
+    float: left;
+}
+
+#vm a > img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#vmpcgamelist {
+    background-color: #000a12;
+    float: left;
+    width: 550px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+#vmpcgamelist h1 {
+    color: white;
+    margin: 45px 40px;
+}
+
+#vmpcgamelist div {
+    /*border: 1px solid white;*/
+    overflow: hidden;
+    width: 460px;
+    margin: 10px auto;
+}
+
+#vmpcgamelist div a {
+    display: block;
+    text-decoration: none;
+    float: left;
+    color: whitesmoke;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    /*border: 1px solid yellow;*/
+}
+
+footer {
+    background-color: #01140e;
+    width: inherit;
+    height: 400px;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+footer div:nth-child(1) {
+    width: 1500px;
+    height:60px;
+    margin: 20px auto;
+    position: relative;
+}
+
+footer h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+}
+
+footer div:nth-child(1) .select {
+    width: 200px;
+    border: 1px solid white;
+    position: absolute;
+    top : 5px;
+    right : 5px;
+    color: white;
+}
+
+
+
+.select ul li:hover {
+    background: rgba(168, 156, 235, 0.35);
+}
+
+footer div:nth-child(2) {
+    margin: 30px auto;
+    width: 1500px;
+    height:100px;
+} 
+
+footer div:nth-child(3) {
+    width: 1500px;
+    color: white;
+    margin: 70px auto 20px;
+}
+
+footer div:nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+ footer p {
+    color: white;
+    font-size: 13px;
+ }
