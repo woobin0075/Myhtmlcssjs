@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin: 4px 15px;
+}
+
+.box {
+    position: relative;
+    
+    padding-top: 50px;
+}
+
+.ballon {
+    display: none;
+    width: 240px;
+    padding: 12px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.box .ballon:nth-of-type(1) {
+    position: absolute;
+    top : 0px;
+    left : 10px;
+}
+
+.box .ballon:nth-of-type(1):after {
+   content: "";
+   position: absolute;
+   border-top: 10px solid black;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   top:45px;
+   left: 50px;
+}
+
+.box .ballon:nth-of-type(2) {
+    position: absolute;
+    top : 0px;
+    left : 80px;
+}
+
+.box .ballon:nth-of-type(2)::after{
+    content: "";
+    position: absolute;
+    border-top: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top:45px;
+    left:100px;
+}
+
+.box .ballon:nth-of-type(3) {
+    position: absolute;
+    top : 0px;
+    right : 80px;
+}
+
+.box .ballon:nth-of-type(3)::after{
+    content: "";
+    position: absolute;
+    border-top: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top:45px;
+    right:100px;
+}
+
+.box .ballon:nth-of-type(4) {
+    position: absolute;
+    top : 0px;
+    right : 0px;
+}
+
+.box .ballon:nth-of-type(4)::after{
+    content: "";
+    position: absolute;
+    border-top: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top:45px;
+    right:50px;
+}
